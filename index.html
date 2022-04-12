@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Bullard | Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/2d0c8617d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+      TODO
+
+      - Add underline Hover Effct to nav items
+      - Add more detail to section one background
+      - Fix hamburger menu
+      - Add button hover effects
+      - Organise classes in order they appear on page
+      - Take better photosnap screenshot
+      - Scrollto for nav and footer links
+      - Contact form
+      - Add some artwork. Make it fun!
+    -->
+    <div class="blobs" id="top">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path
+          fill="#DDFFF2"
+          d="M41.1,-70.5C54.7,-63.5,68,-55.2,71.5,-43.2C75.1,-31.3,68.9,-15.6,60.4,-4.9C51.9,5.8,41.1,11.7,34.7,18.6C28.2,25.6,26.1,33.6,21.1,46.1C16,58.5,8,75.4,-2.3,79.4C-12.7,83.4,-25.3,74.6,-38.3,66.7C-51.3,58.9,-64.7,52,-72,41C-79.3,30.1,-80.5,15,-74.9,3.3C-69.2,-8.5,-56.7,-17,-50.3,-29.6C-44,-42.3,-44,-59.2,-36.6,-69.8C-29.3,-80.4,-14.6,-84.8,-0.4,-84.1C13.8,-83.4,27.6,-77.5,41.1,-70.5Z"
+          transform="translate(20 60)"
+        />
+      </svg>
+      <div class="dot-grid"></div>
+    </div>
+    <nav>
+      <div class="nav-left">Daniel</div>
+      <div class="nav-right hide-on-mobile">
+        &nbsp;
+        <a href="">About</a>
+        <a href="">Work</a>
+        <a href="#contact">Contact</a>
+        &nbsp;
+      </div>
+      <div id="menu-toggle" class="hide-on-desktop">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Info</li></a>
+          <a href="#"><li>Contact</li></a>
+          <a href="https://erikterwan.com/" target="_blank"
+            ><li>Show me more</li></a
+          >
+        </ul>
+      </div>
+    </nav>
+
+    <section class="one">
+      <div class="bio" id="about">
+        <h1 class="compiler-black">Hey There!</h1>
+        <div class="blurb">
+          <p>
+            I'm Daniel, a front-end developer based in Austin, TX. I am
+            passionate about crafting delightful web experiences that meet
+            business goals and satisfy users.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="two" id="work">
+      <h1>computer model goes here</h1>
+      <br />
+      <h1>My Work</h1>
+      <br />
+      <p class="work-blurb">
+        I have years of experience with front-end development, but haven't done
+        much with it. The following works are concepts for fictional companies,
+        and personal projects.
+      </p>
+      <br />
+      <div class="project-panel one-colour">
+        <div class="project-inner">
+          <div class="project-left">
+            <span class="flex" style="align-items: center">
+              <i class="fas fa-ship"></i>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <h3 class="compiler-black">LOGISTICS</h3>
+            </span>
+            <p>
+              A one page website designed and built for a fictional logistics
+              company.
+            </p>
+            <br />
+            <button>
+              <a
+                href="https://github.com/daniel3-dev/Logistics"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="compiler-black"
+                >View The Code</a
+              >
+            </button>
+            <br />
+            <br />
+            <button>
+              <a
+                href="https://daniel3-dev.github.io/Logistics/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="compiler-black"
+                >See It Live</a
+              >
+            </button>
+          </div>
+          <div class="project-right one-image">&nbsp;</div>
+        </div>
+      </div>
+      <div class="project-panel project-two">
+        <div class="project-inner">
+          <div class="project-left">
+            <span class="flex" style="align-items: center">
+              <img src="img/Photosnap.png" alt="" class="two-img" />
+              &nbsp;&nbsp;&nbsp;
+              <h3 class="compiler-black">Photosnap</h3>
+            </span>
+            <p>A marketing site built for a fictional photo-sharing app.</p>
+            <br />
+            <button>
+              <a
+                href="https://github.com/daniel3-dev/Logistics"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="compiler-black"
+                >View The Code</a
+              >
+            </button>
+            <br />
+            <br />
+            <button>
+              <a
+                href="https://daniel3-dev.github.io/Logistics/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="compiler-black"
+                >See It Live</a
+              >
+            </button>
+          </div>
+          <div class="project-right two-image">&nbsp;</div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-form">
+        <h1 class="compiler">Let's Chat</h1>
+        <form action="">
+          <div class="row">
+            <div class="input-container">
+              <label for="name">Name</label>
+              <input type="text" placeholder="What's Your Name?" name="name" />
+            </div>
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="text" placeholder="What's Your Email" name="email" />
+            </div>
+          </div>
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="What's on your mind?"
+          ></textarea>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-list">
+          <a href="#top">To The Top</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href=" #contact">Contact</a>
+        </div>
+        <div class="test">
+          <a
+            href="https://github.com/daniel3-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-github fa-2xl"></i
+          ></a>
+        </div>
+        <br />
+        <p style="text-align: center">by daniel. april 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
