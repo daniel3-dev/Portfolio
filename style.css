@@ -1,0 +1,174 @@
+/*######################## Custom Fonts #######################*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@font-face {
+  font-family: grotesk;
+  src: url(fonts/CabinetGrotesk-Regular.woff2);
+}
+
+@font-face {
+  font-family: groteskMedium;
+  src: url(fonts/CabinetGrotesk-Medium.woff2);
+}
+
+@font-face {
+  font-family: groteskBold;
+  src: url(fonts/CabinetGrotesk-Bold.woff2);
+}
+
+@font-face {
+  font-family: ogg;
+  src: url(fonts/OggBold.ttf);
+}
+
+@font-face {
+  font-family: oggMedium;
+  src: url(fonts/OggMedium.ttf);
+}
+
+/*######################## Base Styles ########################*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #e6f0fa;
+  font-family: 'grotesk', sans-serif;
+}
+
+/*###################### Utility Classes ######################*/
+
+.ogg {
+  font-family: 'ogg', serif;
+}
+
+.ogg-medium {
+  font-family: 'oggMedium', serif;
+}
+
+.bold {
+  font-family: 'groteskBold', sans-serif;
+}
+
+/*############################ Nav ############################*/
+
+nav {
+  padding-top: 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+}
+
+/*######################## Section One ########################*/
+
+.section-one {
+  background-image: url(img/hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blurb {
+  width: 85%;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 769px) {
+  .blurb {
+    width: 75%;
+    font-size: 2.5rem;
+  }
+}
+
+.blurb button {
+  background-color: transparent;
+  font-size: 2rem;
+  color: #000;
+  border: 3px solid #000;
+  padding: 1.5vw;
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 769px) {
+  .blurb button {
+    font-size: 2.5rem;
+    padding: 1vw;
+  }
+}
+
+.blurb button:hover {
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.7s;
+}
+
+.blurb button:not(:hover) {
+  background-color: transparent;
+  color: #000;
+  transition: 0.7s;
+}
+
+/*########################### Footer ##########################*/
+
+footer {
+  background-image: url(img/Footer.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  color: #fff;
+}
+
+.footer-inner {
+  width: 85%;
+  font-size: 1.7rem;
+  margin: 0 auto;
+  padding-top: 10vh;
+}
+
+footer ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+footer a {
+  font-size: 3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #e3775c;
+  transition: 0.7s;
+}
+
+footer a:not(:hover) {
+  color: #fff;
+  transition: 0.7s;
+}
